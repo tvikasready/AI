@@ -31,7 +31,7 @@ if __name__ == "__main__":
     emotion = {}
     emotion.update(syn.dictionary[word])
     
-    for key, value in sorted(emotion.items(),key=lambda kv: kv[1]):
+    for key, value in sorted(emotion.items(),key=lambda kv: kv[1], reverse=True):
         print(key, value)
     emotion.clear()
     
